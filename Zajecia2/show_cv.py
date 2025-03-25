@@ -82,10 +82,10 @@ def main():
     global files
     
     # Pobranie listy plików z katalogu
-    files = os.listdir(r'C:\Users\macmac\Downloads\pliki')
+    files = os.listdir(r'../Files')
 
     # Wczytanie pierwszego obrazu z listy
-    image = cv2.imread(r'C:\Users\macmac\Downloads\pliki\{0}'.format(files[0]))
+    image = cv2.imread(r'../Files/ball.png')
     
     # Zmiana rozmiaru obrazu do rozmiaru ekranu
     resize_image_to_screen_size()
